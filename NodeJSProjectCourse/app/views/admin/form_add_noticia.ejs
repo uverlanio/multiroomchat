@@ -30,10 +30,11 @@
 			<input type="text" id="autor" name="autor" value="<%=noticias.autor %>" placeholder="Nome do autor"/>
 			<br />
 			<label>Data da noticia</label>
-			<input type="date" id="data" name="data" value="<%=noticias.data %>" placeholder="Data"/>
+			<input type="text" id="data_noticia" name="data_noticia" value="<%=noticias.data_noticia %>" placeholder="Data"/>
 			<br />
 			<label>Notícia</label>
-			<textarea id="noticias" name="noticias" rows="5" cols="30"> </textarea>
+			<br />
+			<textarea id="noticias" name="noticias" rows="5" cols="30"><%=noticias.resumo %></textarea>
 			<br />
 			<input type="submit" value="Enviar" />
 		</form>
