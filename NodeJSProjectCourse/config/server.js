@@ -16,6 +16,7 @@ app.set('views','./app/views');
 // --- utilizados como middleware ---
 // Precisa ser utilizando antes do carregamento dos modulos
 // parse do post no format de json
+app.use(express.static('./app/public'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(expressValidator());
 
