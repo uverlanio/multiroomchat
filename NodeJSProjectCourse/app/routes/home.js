@@ -1,8 +1,7 @@
-module.exports = function(app){
+module.exports = function(application){
 
 // requisição no browser
-	app.get('/', function(req, res){
-	// carregando arquivo EJS, que contém o html
-		res.render('home/index');
+	application.get('/', function(req, res){
+		application.app.controllers.home.index(application,req,res);
 	});
-}
+};
