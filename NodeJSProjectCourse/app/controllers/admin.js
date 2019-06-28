@@ -29,7 +29,6 @@ module.exports.noticias_salvar = function(application, req, res){
 		var noticiasModel = new application.app.models.NoticiasDAO(connection);
 
 		noticiasModel.salvarNoticia(noticias, function(error, result){
-			console.log(noticias);
 			res.render('noticias/noticias', {noticias : noticias});
 		});	
 }
