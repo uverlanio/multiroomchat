@@ -43,19 +43,23 @@
 
 
 	    <div class="container">
+	    	<% if(noticias.length > 0) { %>
 	    	<div class="row">
+	    		<% for(var i = 0; i < noticias.length; i++) { %>
 	    		<div class="col-md-12">
 	    			<div class="noticia_wrapper">
-		    			<span class="noticia_autor">Por Jorge</span>
-		    			<a href="noticia/1" class="noticia_titulo">Título da notícia</a>
-		    			<span class="noticia_data">07/09/2016</span>
+		    			<span class="noticia_autor"><%=noticias[i].autor %></span>
+		    			<a href="noticia?id_noticia=<%=noticias[i].id_noticia%>" class="noticia_titulo"><%=noticias[i].titulo %></a>
+		    			<span class="noticia_data"><%=noticias[i].noticia_data %></span>
 		    			<br />
 		    			<p class="noticia_resumo">
-		    				Aqui fica o texto da notícia na íntegra.
+		    				<%=noticias[i].resumo %>
 		    			</p>
 		    		</div>
 		    	</div>
-	    	</div>
+		    	<% } %>	
+			</div>
+			<% } %>
 	    </div>
 	
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
