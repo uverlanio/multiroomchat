@@ -1,0 +1,26 @@
+{
+  "name": "multiroomchat",
+  "version": "1.0.0",
+  "description": "curdo nodeJS na plataforma udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uverdeveloper/multiroomchat.git"
+  },
+  "author": "uverdeveloper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uverdeveloper/multiroomchat/issues"
+  },
+  "homepage": "https://github.com/uverdeveloper/multiroomchat#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.1"
+  }
+}
